@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        事项："
+        android:textSize="32dp"
+        android:id="@+id/text_view1_add"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/edit_text1_add"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view1_add"></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="添加"
+        android:id="@+id/btd1_add"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view2_add"
+        android:layout_below="@+id/text_view1_add"
+        android:text="        日期:"
+        android:textSize="32dp"
+        ></TextView>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text1_add"
+        android:layout_toRightOf="@+id/text_view1_add"
+        android:id="@+id/edit_text2_add"
+
+
+        ></EditText>
+    <TextView
+        android:id="@+id/text_view_date_del_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截止日期:  "
+        android:textSize="32dp"
+        android:layout_below="@+id/text_view2_add"
+        ></TextView>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text2_add"
+        android:layout_toRightOf="@+id/text_view_date_del_add"
+        android:id="@+id/edit_textdel_add"
+        ></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:id="@+id/takephoto"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_textdel_add"
+        ></Button>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:layout_below="@+id/takephoto"
+        android:layout_centerInParent="true"
+        ></ImageView>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="事项："
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_text_view"
+        android:layout_below="@+id/name_text_view"
+        android:text="记录日期："
+        android:textSize="16dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/deldate_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_text_view"
+        android:textSize="16dp"
+      android:text="截止日期："
+        ></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/del_date_things"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        ></Button>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/deldate_text_view"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progress="0"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_text"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBar"
+
+        ></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerInParent="true"
+        ></ImageView>
+
+</RelativeLayout>
